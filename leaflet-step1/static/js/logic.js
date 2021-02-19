@@ -44,7 +44,7 @@ d3.json(queryUrl, function(data) {
                 color: "white",
                 weight: 1,
                 opacity: 0.6,
-                fillOpacity: 0.3
+                fillOpacity: 0.6
             })
         },
         onEachFeature: function(feature, layer){
@@ -54,6 +54,7 @@ d3.json(queryUrl, function(data) {
 
 });
 
+// Create legend
 var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
